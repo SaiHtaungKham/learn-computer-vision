@@ -288,7 +288,7 @@ __pycache__/
 *.xsd.cs
 
 # Override for OpenCV library
-!opencv\bin
-!opencv\bin\*.*
-!opencv\lib
-!opencv\lib\*.*
+!opencv/bin
+!opencv/bin/*.*
+!opencv/lib
+!opencv/lib/*.*
