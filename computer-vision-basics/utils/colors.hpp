@@ -1,7 +1,7 @@
 #ifndef __COLORS_HPP__
 #define __COLORS_HPP__
 
-include "opencv2/opencv.hpp"
+#include "opencv2/opencv.hpp"
 
 using namespace cv;
 
