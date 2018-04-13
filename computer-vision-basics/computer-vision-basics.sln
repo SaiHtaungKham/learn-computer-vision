@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "load-display-save", "load-d
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "manipulate-pixels", "manipulate-pixels\manipulate-pixels.vcxproj", "{EE6C72C8-BA25-4905-A4D6-C80E73878858}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "draw", "draw\draw.vcxproj", "{E789E18F-725C-4982-8BD9-8003A3CDBE77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Release|x64.Build.0 = Release|x64
 		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Release|x86.ActiveCfg = Release|Win32
 		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Release|x86.Build.0 = Release|Win32
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Debug|x64.ActiveCfg = Debug|x64
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Debug|x64.Build.0 = Debug|x64
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Debug|x86.ActiveCfg = Debug|Win32
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Debug|x86.Build.0 = Debug|Win32
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Release|x64.ActiveCfg = Release|x64
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Release|x64.Build.0 = Release|x64
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Release|x86.ActiveCfg = Release|Win32
+		{E789E18F-725C-4982-8BD9-8003A3CDBE77}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
