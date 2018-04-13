@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "load-display-save", "load-display-save\load-display-save.vcxproj", "{977AD88E-3FED-404C-90C4-A50D4C08ACFA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "manipulate-pixels", "manipulate-pixels\manipulate-pixels.vcxproj", "{EE6C72C8-BA25-4905-A4D6-C80E73878858}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{977AD88E-3FED-404C-90C4-A50D4C08ACFA}.Release|x64.Build.0 = Release|x64
 		{977AD88E-3FED-404C-90C4-A50D4C08ACFA}.Release|x86.ActiveCfg = Release|Win32
 		{977AD88E-3FED-404C-90C4-A50D4C08ACFA}.Release|x86.Build.0 = Release|Win32
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Debug|x64.ActiveCfg = Debug|x64
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Debug|x64.Build.0 = Debug|x64
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Debug|x86.ActiveCfg = Debug|Win32
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Debug|x86.Build.0 = Debug|Win32
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Release|x64.ActiveCfg = Release|x64
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Release|x64.Build.0 = Release|x64
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Release|x86.ActiveCfg = Release|Win32
+		{EE6C72C8-BA25-4905-A4D6-C80E73878858}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
