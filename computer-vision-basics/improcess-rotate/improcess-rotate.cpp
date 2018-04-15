@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <iostream>
 #include "opencv2/opencv.hpp"
+#include "utils/improcess.hpp"
 
 using namespace cv;
 
@@ -73,6 +74,12 @@ int main(int argc, char** argv) {
     // Print the rotation matrix
     std::cout << "Rotated by offset and 45 Degrees - Rotation matrix:" << std::endl;
     std::cout << M << std::endl;
+
+    // Rotate the image by 180 degrees
+    // using the helper function
+    rotate(img, rotated, 180.0);
+    imshow("Rotated by 180 Degrees", rotated);
+    waitKey();
 
     return 0;
 }
