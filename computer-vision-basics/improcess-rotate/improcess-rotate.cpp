@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <iostream>
 #include "opencv2/opencv.hpp"
-#include "utils/improcess.hpp"
+#include "cvutils/improcess.hpp"
 
 using namespace cv;
 
@@ -77,7 +77,7 @@ int main(int argc, char** argv) {
 
     // Rotate the image by 180 degrees
     // using the helper function
-    rotate(img, rotated, 180.0);
+    cvutils::rotate(img, rotated, 180.0);
     imshow("Rotated by 180 Degrees", rotated);
     waitKey();
 

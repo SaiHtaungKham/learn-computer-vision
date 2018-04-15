@@ -150,11 +150,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\utils\improcess.hpp" />
+    <ClCompile Include="..\cvutils\improcess.cpp" />
+    <ClCompile Include="improcess-translate.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\utils\improcess.cpp" />
-    <ClCompile Include="improcess-translate.cpp" />
+    <ClInclude Include="..\cvutils\improcess.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

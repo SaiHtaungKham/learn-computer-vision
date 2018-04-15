@@ -122,11 +122,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\utils\improcess.cpp" />
+    <ClCompile Include="..\cvutils\improcess.cpp" />
     <ClCompile Include="improcess-rotate.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\utils\improcess.hpp" />
+    <ClInclude Include="..\cvutils\improcess.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,7 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\utils">
+    <Filter Include="Source Files\cvutils">
       <UniqueIdentifier>{b6936ef2-ba41-4245-8677-0cab601e3cbb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -21,12 +21,12 @@
     <ClCompile Include="improcess-rotate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\utils\improcess.cpp">
-      <Filter>Source Files\utils</Filter>
+    <ClCompile Include="..\cvutils\improcess.cpp">
+      <Filter>Source Files\cvutils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\utils\improcess.hpp">
+    <ClInclude Include="..\cvutils\improcess.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
