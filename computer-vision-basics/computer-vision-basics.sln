@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "improcess-crop", "improcess
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "improcess-arithmetic", "improcess-arithmetic\improcess-arithmetic.vcxproj", "{A450D4B3-D37F-4653-AFA0-C867D5929939}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "improcess-bitwise", "improcess-bitwise\improcess-bitwise.vcxproj", "{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{A450D4B3-D37F-4653-AFA0-C867D5929939}.Release|x64.Build.0 = Release|x64
 		{A450D4B3-D37F-4653-AFA0-C867D5929939}.Release|x86.ActiveCfg = Release|Win32
 		{A450D4B3-D37F-4653-AFA0-C867D5929939}.Release|x86.Build.0 = Release|Win32
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Debug|x64.ActiveCfg = Debug|x64
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Debug|x64.Build.0 = Debug|x64
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Debug|x86.Build.0 = Debug|Win32
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Release|x64.ActiveCfg = Release|x64
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Release|x64.Build.0 = Release|x64
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Release|x86.ActiveCfg = Release|Win32
+		{CDC649C1-2B72-46DC-8930-AF09BED2E4A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
