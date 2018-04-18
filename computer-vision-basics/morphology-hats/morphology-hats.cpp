@@ -41,5 +41,22 @@ int main(int argc, char** argv) {
     Mat gray;
     cvtColor(img, gray, COLOR_BGR2GRAY);
 
+    // Create the kernel for morphological operation
+    // The prior knowlege is that the number plate is 3x wider than its tall
+    // So the kernel size is defined as a rectangle with 13-pixel width and 5-pixel height
+    Mat kernel = getStructuringElement(MORPH_RECT, Size(13, 5));
+   
+    // Apply the top hat / white hat operation
+    Mat tophat;
+    morphologyEx(gray, tophat, MORPH_TOPHAT, kernel);
+    imshow("Tophat", tophat);
+    waitKey();
+
+    // Apply the blackhat operation
+    Mat blackhat;
+    morphologyEx(gray, blackhat, MORPH_BLACKHAT, kernel);
+    imshow("Blackhat", blackhat);
+    waitKey();
+
     return 0;
 }
