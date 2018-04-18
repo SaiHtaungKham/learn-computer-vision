@@ -68,7 +68,7 @@ int main(int argc, char** argv) {
     for (unsigned int i = 0; i < 3; i++) {
         Mat kernel = getStructuringElement(MORPH_RECT, kernelSizes[i]);
         Mat closing;
-        morphologyEx(img, closing, MORPH_CLOSE, kernel);
+        morphologyEx(gray, closing, MORPH_CLOSE, kernel);
         imshow(format("Closing: (%d, %d)", kernelSizes[i].width, kernelSizes[i].height), closing);
         waitKey();
     }
@@ -81,7 +81,7 @@ int main(int argc, char** argv) {
     for (unsigned int i = 0; i < 3; i++) {
         Mat kernel = getStructuringElement(MORPH_RECT, kernelSizes[i]);
         Mat gradient;
-        morphologyEx(img, gradient, MORPH_GRADIENT, kernel);
+        morphologyEx(gray, gradient, MORPH_GRADIENT, kernel);
         imshow(format("Gradient: (%d, %d)", kernelSizes[i].width, kernelSizes[i].height), gradient);
         waitKey();
     }
