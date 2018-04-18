@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
     if (parser.has("help")) {
         parser.printMessage();
         printf("Example:\n");
-        printf("improcess-split-merge computervision.png\n");
+        printf("morphology computervision.png\n");
         return 0;
     }
 
