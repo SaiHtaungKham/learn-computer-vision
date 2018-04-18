@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "improcess-split-merge", "im
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "morphology", "morphology\morphology.vcxproj", "{3DEF6AD2-D0AC-47BE-BEDA-91FCC2E41BDD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "morphology-opening", "morphology-opening\morphology-opening.vcxproj", "{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{3DEF6AD2-D0AC-47BE-BEDA-91FCC2E41BDD}.Release|x64.Build.0 = Release|x64
 		{3DEF6AD2-D0AC-47BE-BEDA-91FCC2E41BDD}.Release|x86.ActiveCfg = Release|Win32
 		{3DEF6AD2-D0AC-47BE-BEDA-91FCC2E41BDD}.Release|x86.Build.0 = Release|Win32
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Debug|x64.ActiveCfg = Debug|x64
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Debug|x64.Build.0 = Debug|x64
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Debug|x86.Build.0 = Debug|Win32
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Release|x64.ActiveCfg = Release|x64
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Release|x64.Build.0 = Release|x64
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Release|x86.ActiveCfg = Release|Win32
+		{E1FBFC07-44FA-4542-8BF2-20B15DA5ACAA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -41,48 +41,15 @@ int main(int argc, char** argv) {
     Mat gray;
     cvtColor(img, gray, COLOR_BGR2GRAY);
 
-    // Apply several erosions
-    for (unsigned int i = 0; i < 3; i++) {
-        Mat eroded;
-        erode(gray, eroded, Mat(), Point(-1, -1), i + 1);
-        imshow("Eroded " + format("%d", i + 1) + " times", eroded);
-        waitKey();
-    }
-
-    // Apply several dilations
-    for (unsigned int i = 0; i < 3; i++) {
-        Mat dilated;
-        dilate(gray, dilated, Mat(), Point(-1, -1), i + 1);
-        imshow(format("Dilated %d times", i + 1), dilated);
-        waitKey();
-    }
-
-    // Close windows
-    destroyAllWindows();
-    imshow("Original", img);
-
     // Define some kernel sizes
     Size kernelSizes[] = { Size(3, 3), Size(5, 5), Size(7, 7) };
 
-    // Apply several closings
+    // Apply serveral openings
     for (unsigned int i = 0; i < 3; i++) {
         Mat kernel = getStructuringElement(MORPH_RECT, kernelSizes[i]);
-        Mat closing;
-        morphologyEx(img, closing, MORPH_CLOSE, kernel);
-        imshow(format("Closing: (%d, %d)", kernelSizes[i].width, kernelSizes[i].height), closing);
-        waitKey();
-    }
-
-    // Close windows
-    destroyAllWindows();
-    imshow("Original", img);
-
-    // Apply several morphological gradients
-    for (unsigned int i = 0; i < 3; i++) {
-        Mat kernel = getStructuringElement(MORPH_RECT, kernelSizes[i]);
-        Mat gradient;
-        morphologyEx(img, gradient, MORPH_GRADIENT, kernel);
-        imshow(format("Gradient: (%d, %d)", kernelSizes[i].width, kernelSizes[i].height), gradient);
+        Mat opening;
+        morphologyEx(gray, opening, MORPH_OPEN, kernel);
+        imshow(format("Opening: (%d, %d)", kernelSizes[i].width, kernelSizes[i].height), opening);
         waitKey();
     }
 
