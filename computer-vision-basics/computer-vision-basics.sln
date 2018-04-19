@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "morphology-hats", "morpholo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smooth-blur", "smooth-blur\smooth-blur.vcxproj", "{44DD0434-030E-4C70-9A31-FDB5B5B09780}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "color-space", "color-space\color-space.vcxproj", "{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{44DD0434-030E-4C70-9A31-FDB5B5B09780}.Release|x64.Build.0 = Release|x64
 		{44DD0434-030E-4C70-9A31-FDB5B5B09780}.Release|x86.ActiveCfg = Release|Win32
 		{44DD0434-030E-4C70-9A31-FDB5B5B09780}.Release|x86.Build.0 = Release|Win32
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Debug|x64.ActiveCfg = Debug|x64
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Debug|x64.Build.0 = Debug|x64
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Debug|x86.Build.0 = Debug|Win32
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Release|x64.ActiveCfg = Release|x64
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Release|x64.Build.0 = Release|x64
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Release|x86.ActiveCfg = Release|Win32
+		{2A2DBC5C-101E-4F4A-BCBE-0B5B259590A3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
