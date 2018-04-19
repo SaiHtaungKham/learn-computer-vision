@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "color-space", "color-space\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "threshold-simple", "threshold-simple\threshold-simple.vcxproj", "{2223C244-A145-476D-8047-CE8C40FC7EDC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "threshold-otsu", "threshold-otsu\threshold-otsu.vcxproj", "{1084029F-7943-4423-B3F7-6A0AB878E7B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -191,6 +193,14 @@ Global
 		{2223C244-A145-476D-8047-CE8C40FC7EDC}.Release|x64.Build.0 = Release|x64
 		{2223C244-A145-476D-8047-CE8C40FC7EDC}.Release|x86.ActiveCfg = Release|Win32
 		{2223C244-A145-476D-8047-CE8C40FC7EDC}.Release|x86.Build.0 = Release|Win32
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Debug|x64.ActiveCfg = Debug|x64
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Debug|x64.Build.0 = Debug|x64
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Debug|x86.ActiveCfg = Debug|Win32
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Debug|x86.Build.0 = Debug|Win32
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Release|x64.ActiveCfg = Release|x64
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Release|x64.Build.0 = Release|x64
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Release|x86.ActiveCfg = Release|Win32
+		{1084029F-7943-4423-B3F7-6A0AB878E7B1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{2223C244-A145-476D-8047-CE8C40FC7EDC}</ProjectGuid>
+    <ProjectGuid>{1084029F-7943-4423-B3F7-6A0AB878E7B1}</ProjectGuid>
     <RootNamespace>improcessrotate</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -122,7 +122,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="threshold-simple.cpp" />
+    <ClCompile Include="threshold-otsu.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

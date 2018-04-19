@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="threshold-simple.cpp">
+    <ClCompile Include="threshold-otsu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

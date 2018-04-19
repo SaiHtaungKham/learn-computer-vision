@@ -11,12 +11,12 @@ int main(int argc, char** argv) {
 
     // Construct the command line parser and parse the arguments
     CommandLineParser parser(argc, argv, keys);
-    parser.about("Perform simple thresholding");
+    parser.about("Perform thresholding using Otsu's method");
 
     if (parser.has("help")) {
         parser.printMessage();
         printf("Example:\n");
-        printf("threshold-simple coins-1.jpg\n");
+        printf("threshold-otsu coins.jpg\n");
         return 0;
     }
 
@@ -44,12 +44,12 @@ int main(int argc, char** argv) {
     Mat blurred;
     GaussianBlur(gray, blurred, Size(7, 7), 0.0);
 
-    // Apply the simple thresholding
+    // Apply the thresholding using Otsu's method
     // We seek the segmented coins to appear as white on the black background
     // In the original image, coins are put on the brighter background, hence we use the inversed thresholding 
-    double T = 125.0;   // Manually define the threshold value
     Mat threshInv;
-    threshold(gray, threshInv, T, 255.0, THRESH_BINARY_INV);
+    double T = threshold(gray, threshInv, 0.0, 255.0, THRESH_BINARY_INV | THRESH_OTSU); // The thresholding value is computed automatically, hence we supply 0 for the thresh param
+    printf("Otsu thresholding value : %.0f\n", T);
     imshow("Threshold Binary Inversed", threshInv);
     waitKey();
 

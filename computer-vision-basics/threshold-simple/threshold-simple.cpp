@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
     if (parser.has("help")) {
         parser.printMessage();
         printf("Example:\n");
-        printf("threshold-simple coins-1.jpg\n");
+        printf("threshold-simple coins.jpg\n");
         return 0;
     }
 
