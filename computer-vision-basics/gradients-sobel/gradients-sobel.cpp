@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
     if (parser.has("help")) {
         parser.printMessage();
         printf("Example:\n");
-        printf("gradients-soble brick-wall.jpg\n");
+        printf("gradients-sobel brick-wall.jpg\n");
         return 0;
     }
 
