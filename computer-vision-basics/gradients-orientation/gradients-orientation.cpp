@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
     if (parser.has("help")) {
         parser.printMessage();
         printf("Example:\n");
-        printf("gradients-orientation coins.jpg\n");
+        printf("gradients-orientation coins-2.jpg\n");
         return 0;
     }
 
