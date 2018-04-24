@@ -71,4 +71,42 @@ namespace cvutils {
             resize(src, dst, dsize, 0.0, 0.0, inter);
         }
     }
+
+
+    int median(InputArray image) {
+        CV_Assert(image.getMat().total() != 0 && 
+                  image.getMat().channels() == 1 &&
+                  image.getMat().type() == CV_8U);
+
+        int m = (image.getMat().rows * image.getMat().cols) / 2;
+        int bin = 0;
+        int med = -1;
+
+        int histSize = 256;
+        float range[] = { 0.0, 256.0 };
+        const float* histRange = { range };
+        Mat hist;
+        calcHist(&image.getMat(), 1, 0, Mat(), hist, 1, &histSize, &histRange);
+        for (int i = 0; i < histSize && med < 0; ++i) {
+            bin += cvRound(hist.at<float>(i));
+            if (bin > m && med < 0) {
+                med = i;
+            }
+        }
+
+        return med;
+    }
+
+
+    void CannyAuto(InputArray image, OutputArray edges, double sigma) {
+        CV_Assert(image.getMat().total() != 0 && 
+                  image.getMat().channels() == 1 &&
+                  image.getMat().type() == CV_8U);
+        CV_Assert(edges.isMat());
+
+        int v = median(image);
+        double lowerT = std::max(0.0, (1.0 - sigma) * v);
+        double upperT = std::min(255.0, (1.0 + sigma) * v);
+        Canny(image, edges, lowerT, upperT);
+    }
 }
