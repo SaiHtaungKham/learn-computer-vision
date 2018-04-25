@@ -8,8 +8,8 @@ using namespace cv;
 int main(int argc, char** argv) {
     // Define the arguments
     const String keys =
-        "{help   | | Print this message}"
-        "{@input | | Path to the image}";
+        "{ help   | | Print this message }"
+        "{ @input | | Path to the image  }";
 
     // Construct the command line parser and parse the arguments
     CommandLineParser parser(argc, argv, keys);

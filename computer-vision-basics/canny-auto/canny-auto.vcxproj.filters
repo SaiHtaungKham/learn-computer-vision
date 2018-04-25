@@ -13,12 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\cvutils">
+      <UniqueIdentifier>{531f4a2b-9d75-4822-a2a1-95688fc2c1ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="canny-auto.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\cvutils\improcess.cpp">
+      <Filter>Source Files\cvutils</Filter>
+    </ClCompile>
+    <ClCompile Include="canny-auto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

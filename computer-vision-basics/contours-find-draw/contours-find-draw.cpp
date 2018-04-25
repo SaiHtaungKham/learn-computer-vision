@@ -51,7 +51,7 @@ int main(int argc, char** argv) {
 
     // Draw all the contours
     Mat clone = image.clone();
-    drawContours(clone, contours, -1, COLOR_YELLOW, 2);
+    drawContours(clone, contours, -1, COLORNAME_YELLOW, 2);
     imshow("All Contours", clone);
     waitKey();
     destroyAllWindows();
@@ -59,7 +59,7 @@ int main(int argc, char** argv) {
     // Draw each contour, one by one
     clone = image.clone();
     for (unsigned int i = 0; i < contours.size(); i++) {
-        drawContours(clone, contours, i, COLOR_AQUA, 2);
+        drawContours(clone, contours, i, COLORNAME_AQUA, 2);
         printf("Draw contours #%d\n", i + 1);
         imshow("Contours", clone);
         waitKey();
@@ -71,7 +71,7 @@ int main(int argc, char** argv) {
     findContours(gray.clone(), contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
     printf("Found %d EXTERNAL contours\n", (int)contours.size());
     clone = image.clone();
-    drawContours(clone, contours, -1, COLOR_GREEN, 2);
+    drawContours(clone, contours, -1, COLORNAME_GREEN, 2);
     imshow("External Contours", clone);
     waitKey();
     destroyAllWindows();
