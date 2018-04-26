@@ -109,4 +109,11 @@ namespace cvutils {
         double upperT = std::min(255.0, (1.0 + sigma) * v);
         Canny(image, edges, lowerT, upperT);
     }
+
+
+    bool isLargerContourArea(std::vector<Point> contour1, std::vector<Point> contour2) {
+        double i = fabs(contourArea(contour1));
+        double j = fabs(contourArea(contour2));
+        return (i > j);
+    }
 }

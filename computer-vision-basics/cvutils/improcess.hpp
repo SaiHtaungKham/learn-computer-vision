@@ -58,6 +58,18 @@ namespace cvutils {
     //! A lower value of sigma indicates a tighter threshold, whereas a larger value of sigma  gives a wider threshold.
     //!
     void CannyAuto(cv::InputArray image, cv::OutputArray edges, double sigma = 0.33);
+
+    //!
+    //! \brief Check which contour area is larger.
+    //! \param contour1 The first contour.
+    //! \param contour2 The second contour.
+    //! \return true if the area of the first contour is larger than the one of the second contour. Otherwise, false.
+    //! \code{.cpp} 
+    //! // Sort the contours from largest to smallerst
+    //! std::sort(contours.begin(), contours.end(), cvutil::isLargerContourArea);
+    //! \endcode
+    //!
+    bool isLargerContourArea(std::vector<cv::Point> contour1, std::vector<cv::Point> contour2);
 }
 
 #endif  // __IMPROCESS_HPP__
