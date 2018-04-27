@@ -1,5 +1,4 @@
 #include <cstdio>
-#include <cmath>
 #include <algorithm>
 #include "opencv2/opencv.hpp"
 #include "cvutils/colors.hpp"
@@ -20,7 +19,7 @@ int main(int argc, char** argv) {
     if (parser.has("help")) {
         parser.printMessage();
         printf("Example:\n");
-        printf("contours-approx-scanner receipt.png\n");
+        printf("contours-approx-scanner document.jpg\n");
         return 0;
     }
 
@@ -46,8 +45,7 @@ int main(int argc, char** argv) {
 
     // Detect the edges
     Mat edges;
-    //Canny(gray, edges, 75, 200);
-    cvutils::CannyAuto(gray, edges, 3.0);
+    cvutils::CannyAuto(gray, edges);
 
     // Debug: show the edge map
     imshow("Edges", edges);
@@ -77,7 +75,7 @@ int main(int argc, char** argv) {
         // If the approximated contour has 4 vertices, then we are examining a rectangle
         if (approx_contour.size() == 4) {
             // Draw the approximated outline of documents
-            drawContours(image, approx_contours, -1, COLORNAME_GREEN, 2, LINE_AA);
+            drawContours(image, approx_contours, -1, COLORNAME_GREEN, 3, LINE_AA);
         }
     }
     imshow("Output", image);

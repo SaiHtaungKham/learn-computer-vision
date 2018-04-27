@@ -2,6 +2,7 @@
 #define __IMPROCESS_HPP__
 
 #include <algorithm>
+#include <cmath>
 #include "opencv2/opencv.hpp"
 
 namespace cvutils {
