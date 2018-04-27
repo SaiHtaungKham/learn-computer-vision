@@ -67,10 +67,34 @@ namespace cvutils {
     //! \return true if the area of the first contour is larger than the one of the second contour. Otherwise, false.
     //! \code{.cpp} 
     //! // Sort the contours from largest to smallerst
-    //! std::sort(contours.begin(), contours.end(), cvutil::isLargerContourArea);
+    //! std::sort(contours.begin(), contours.end(), cvutils::isLargerContourArea);
     //! \endcode
     //!
-    bool isLargerContourArea(std::vector<cv::Point> contour1, std::vector<cv::Point> contour2);
+    bool isLargerContourArea(cv::InputArray contour1, cv::InputArray contour2);
+
+    //!
+    //! \brief Check which contour is on the left.
+    //! \param contour1 The first contour.
+    //! \param contour2 The second contour.
+    //! \return true if the area of the first contour is on the left of the second contour. Otherwise, false.
+    //! \code{.cpp} 
+    //! // Sort the contours from left to right
+    //! std::sort(contours.begin(), contours.end(), cvutils::isLeftToRightContour);
+    //! \endcode
+    //!
+    bool isLeftToRightContour(cv::InputArray contour1, cv::InputArray contour2);
+
+    //!
+    //! \brief Check which contour is on the top.
+    //! \param contour1 The first contour.
+    //! \param contour2 The second contour.
+    //! \return true if the area of the first contour is on the top of the second contour. Otherwise, false.
+    //! \code{.cpp} 
+    //! // Sort the contours from left to right
+    //! std::sort(contours.begin(), contours.end(), cvutils::isTopToBottomContour);
+    //! \endcode
+    //!
+    bool isTopToBottomContour(cv::InputArray contour1, cv::InputArray contour2);
 }
 
 #endif  // __IMPROCESS_HPP__
