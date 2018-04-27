@@ -64,7 +64,7 @@ int main(int argc, char** argv) {
         // Commonly, we define the epsilon as some percentage 
         // (usually between 1-5%) of the original contour perimeter
         double perimeter = arcLength(contours[i], true);
-        double epsilon = 0.01 * perimeter;
+        double epsilon = 0.02 * perimeter;
         std::vector<Point> approx_contour;
         approxPolyDP(contours[i], approx_contour, epsilon, true);
         approx_contours.push_back(approx_contour);
