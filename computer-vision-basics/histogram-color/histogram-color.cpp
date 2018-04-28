@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    // Load the image and convert it to grayscale
+    // Load the image
     Mat image = imread(input_path, IMREAD_COLOR);
     if (image.empty()) {
         printf("ERR: Cannot load the image\n");
