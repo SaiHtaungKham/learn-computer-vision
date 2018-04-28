@@ -52,13 +52,13 @@ int main(int argc, char** argv) {
     int hist_w = 512;
     int hist_h = 400;
     int bin_w = cvRound(static_cast<double>(hist_w) / hist_size[0]);
-    Mat hist_image = Mat::zeros(hist_h, hist_w, CV_8UC3);
+    Mat hist_image(hist_h, hist_w, CV_8UC3, COLORNAME_WHITE);
     Mat hist_norm;
     normalize(hist, hist_norm, 0, hist_image.rows, NORM_MINMAX); // normalize to range [0, 1]
     for (int i = 1; i < hist_size[0]; i++) {
         line(hist_image, Point(bin_w * (i - 1), hist_h - cvRound(hist_norm.at<float>(i - 1))),
                          Point(bin_w * i, hist_h - cvRound(hist_norm.at<float>(i))), 
-                         COLORNAME_WHITE, 1, LINE_AA);
+                         COLORNAME_BLACK, 1, LINE_AA);
     }
     imshow("Grayscale Histogram", hist_image);
     waitKey();
